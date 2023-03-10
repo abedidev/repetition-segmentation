@@ -1,5 +1,0 @@
-learning_rate = 0.0005
-num_epochs = 61
-num_layers = 6
-batchSize = 1
-printingBatch = 0
