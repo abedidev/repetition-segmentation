@@ -1,0 +1,15 @@
+/home/kumar/anaconda3/envs/uot_project/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 86 -> 82 -> 1
+/home/kumar/anaconda3/envs/uot_project/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 86 -> 82 -> 1
+/home/kumar/anaconda3/envs/uot_project/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 86 -> 82 -> 1
+/home/kumar/anaconda3/envs/uot_project/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 86 -> 82 -> 1
+/home/kumar/anaconda3/envs/uot_project/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 86 -> 82 -> 1

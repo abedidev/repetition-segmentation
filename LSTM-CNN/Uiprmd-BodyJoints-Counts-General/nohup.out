@@ -1,0 +1,51 @@
+Traceback (most recent call last):
+  File "/Users/riddhichatterjee/SummerProject2022/Repetition-Counting/DM-Testing/Final-Experiments/GEN_Counts/SumOfTS/LSTM-CNN-GEN-BJ/CV_Trainer.py", line 248, in <module>
+    y_pred = model(inputs, seqLens)
+  File "/Users/riddhichatterjee/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/Users/riddhichatterjee/SummerProject2022/Repetition-Counting/DM-Testing/Final-Experiments/GEN_Counts/SumOfTS/LSTM-CNN-GEN-BJ/VS_LSTM.py", line 101, in forward
+    out, self.hidden = self.lstm(out, self.hidden)
+  File "/Users/riddhichatterjee/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/Users/riddhichatterjee/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/rnn.py", line 759, in forward
+    self.check_forward_args(input, hx, batch_sizes)
+  File "/Users/riddhichatterjee/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/rnn.py", line 684, in check_forward_args
+    self.check_input(input, batch_sizes)
+  File "/Users/riddhichatterjee/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/rnn.py", line 205, in check_input
+    raise RuntimeError(
+RuntimeError: input.size(-1) must be equal to input_size. Expected 75, got 43
+Dimensions: 150 -> 146 -> 1
+Traceback (most recent call last):
+  File "/Users/riddhichatterjee/SummerProject2022/Repetition-Counting/DM-Testing/Final-Experiments/GEN_Counts/SumOfTS/LSTM-CNN-GEN-BJ/CV_Trainer.py", line 248, in <module>
+    y_pred = model(inputs, seqLens)
+  File "/Users/riddhichatterjee/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/Users/riddhichatterjee/SummerProject2022/Repetition-Counting/DM-Testing/Final-Experiments/GEN_Counts/SumOfTS/LSTM-CNN-GEN-BJ/VS_LSTM.py", line 135, in forward
+    out, self.hidden = self.lstm(X, self.hidden)
+  File "/Users/riddhichatterjee/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/Users/riddhichatterjee/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/rnn.py", line 759, in forward
+    self.check_forward_args(input, hx, batch_sizes)
+  File "/Users/riddhichatterjee/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/rnn.py", line 684, in check_forward_args
+    self.check_input(input, batch_sizes)
+  File "/Users/riddhichatterjee/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/rnn.py", line 205, in check_input
+    raise RuntimeError(
+RuntimeError: input.size(-1) must be equal to input_size. Expected 75, got 43
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+/opt/anaconda3/envs/torch/lib/python3.7/site-packages/scipy/stats/stats.py:4196: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+Dimensions: 150 -> 146 -> 1
+/opt/anaconda3/envs/torch/lib/python3.7/site-packages/scipy/stats/stats.py:4196: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+Dimensions: 150 -> 146 -> 1
+/opt/anaconda3/envs/torch/lib/python3.7/site-packages/scipy/stats/stats.py:4196: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+Dimensions: 150 -> 146 -> 1
+/opt/anaconda3/envs/torch/lib/python3.7/site-packages/scipy/stats/stats.py:4196: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+Dimensions: 150 -> 146 -> 1
+/opt/anaconda3/envs/torch/lib/python3.7/site-packages/scipy/stats/stats.py:4196: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+Dimensions: 150 -> 146 -> 1

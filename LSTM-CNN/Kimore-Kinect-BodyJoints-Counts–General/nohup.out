@@ -1,0 +1,367 @@
+Traceback (most recent call last):
+  File "/Users/riddhichatterjee/SummerProject2022/Repetition-Counting/DM-Testing/Final-Experiments/GEN_Counts/SumOfTS/LSTM-CNN-GEN-BJ/CV_Trainer.py", line 248, in <module>
+    y_pred = model(inputs, seqLens)
+  File "/Users/riddhichatterjee/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/Users/riddhichatterjee/SummerProject2022/Repetition-Counting/DM-Testing/Final-Experiments/GEN_Counts/SumOfTS/LSTM-CNN-GEN-BJ/VS_LSTM.py", line 101, in forward
+    out, self.hidden = self.lstm(out, self.hidden)
+  File "/Users/riddhichatterjee/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/Users/riddhichatterjee/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/rnn.py", line 759, in forward
+    self.check_forward_args(input, hx, batch_sizes)
+  File "/Users/riddhichatterjee/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/rnn.py", line 684, in check_forward_args
+    self.check_input(input, batch_sizes)
+  File "/Users/riddhichatterjee/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/rnn.py", line 205, in check_input
+    raise RuntimeError(
+RuntimeError: input.size(-1) must be equal to input_size. Expected 75, got 43
+Dimensions: 150 -> 146 -> 1
+Traceback (most recent call last):
+  File "/Users/riddhichatterjee/SummerProject2022/Repetition-Counting/DM-Testing/Final-Experiments/GEN_Counts/SumOfTS/LSTM-CNN-GEN-BJ/CV_Trainer.py", line 248, in <module>
+    y_pred = model(inputs, seqLens)
+  File "/Users/riddhichatterjee/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/Users/riddhichatterjee/SummerProject2022/Repetition-Counting/DM-Testing/Final-Experiments/GEN_Counts/SumOfTS/LSTM-CNN-GEN-BJ/VS_LSTM.py", line 135, in forward
+    out, self.hidden = self.lstm(X, self.hidden)
+  File "/Users/riddhichatterjee/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/Users/riddhichatterjee/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/rnn.py", line 759, in forward
+    self.check_forward_args(input, hx, batch_sizes)
+  File "/Users/riddhichatterjee/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/rnn.py", line 684, in check_forward_args
+    self.check_input(input, batch_sizes)
+  File "/Users/riddhichatterjee/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/rnn.py", line 205, in check_input
+    raise RuntimeError(
+RuntimeError: input.size(-1) must be equal to input_size. Expected 75, got 43
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Traceback (most recent call last):
+  File "CV_Trainer.py", line 303, in <module>
+    y_pred = model(inputs, seqLens)
+  File "/opt/anaconda3/envs/torch/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/disk1/riddhi/ResearchPaper_Experiments/LSTM-CNN-GEN-BJ-AvgOfTS/VS_LSTM.py", line 135, in forward
+    out, self.hidden = self.lstm(X, self.hidden)
+  File "/opt/anaconda3/envs/torch/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/opt/anaconda3/envs/torch/lib/python3.7/site-packages/torch/nn/modules/rnn.py", line 582, in forward
+    self.dropout, self.training, self.bidirectional, self.batch_first)
+RuntimeError: CUDA out of memory. Tried to allocate 24.00 MiB (GPU 1; 10.76 GiB total capacity; 651.06 MiB already allocated; 29.56 MiB free; 686.00 MiB reserved in total by PyTorch)
+Dimensions: 150 -> 146 -> 1
+Traceback (most recent call last):
+  File "CV_Trainer.py", line 258, in <module>
+    with open("Exercises/"+str(exercise)+"/CV/TrainingLoss_"+str(testIndex)+".txt", "a") as tl:
+FileNotFoundError: [Errno 2] No such file or directory: 'Exercises/0/CV/TrainingLoss_2.txt'
+Dimensions: 150 -> 146 -> 1
+Traceback (most recent call last):
+  File "CV_Trainer.py", line 258, in <module>
+    with open("Exercises/"+str(exercise)+"/CV/TrainingLoss_"+str(testIndex)+".txt", "a") as tl:
+FileNotFoundError: [Errno 2] No such file or directory: 'Exercises/0/CV/TrainingLoss_0.txt'
+Dimensions: 150 -> 146 -> 1
+Traceback (most recent call last):
+  File "CV_Trainer.py", line 258, in <module>
+    with open("Exercises/"+str(exercise)+"/CV/TrainingLoss_"+str(testIndex)+".txt", "a") as tl:
+FileNotFoundError: [Errno 2] No such file or directory: 'Exercises/0/CV/TrainingLoss_3.txt'
+Dimensions: 150 -> 146 -> 1
+Traceback (most recent call last):
+  File "CV_Trainer.py", line 258, in <module>
+    with open("Exercises/"+str(exercise)+"/CV/TrainingLoss_"+str(testIndex)+".txt", "a") as tl:
+FileNotFoundError: [Errno 2] No such file or directory: 'Exercises/0/CV/TrainingLoss_1.txt'
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Exiting...
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1

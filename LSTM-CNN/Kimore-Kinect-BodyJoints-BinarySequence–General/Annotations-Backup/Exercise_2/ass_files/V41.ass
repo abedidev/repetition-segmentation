@@ -1,0 +1,25 @@
+﻿[Script Info]
+; This is an Advanced Sub Station Alpha v4+ script.
+Title: 
+ScriptType: v4.00+
+PlayDepth: 0
+ScaledBorderAndShadow: Yes
+PlayResX: 960
+PlayResY: 540
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Arial,37.5,&H00FFFFFF,&H0000FFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,1,1,2,10,10,10,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:06.90,0:00:09.74,Default,,0,0,0,,L
+Dialogue: 0,0:00:09.74,0:00:12.12,Default,,0,0,0,,R
+Dialogue: 0,0:00:12.12,0:00:14.60,Default,,0,0,0,,L
+Dialogue: 0,0:00:14.60,0:00:17.22,Default,,0,0,0,,R
+Dialogue: 0,0:00:17.22,0:00:19.82,Default,,0,0,0,,L
+Dialogue: 0,0:00:19.82,0:00:22.40,Default,,0,0,0,,R
+Dialogue: 0,0:00:22.40,0:00:24.90,Default,,0,0,0,,L
+Dialogue: 0,0:00:24.90,0:00:27.80,Default,,0,0,0,,R
+Dialogue: 0,0:00:27.80,0:00:30.20,Default,,0,0,0,,L
+Dialogue: 0,0:00:30.20,0:00:33.12,Default,,0,0,0,,R

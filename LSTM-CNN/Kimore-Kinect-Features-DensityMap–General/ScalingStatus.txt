@@ -1,0 +1,2 @@
+Status = False
+Scaling_factor = 1.0

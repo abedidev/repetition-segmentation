@@ -1,0 +1,1020 @@
+Traceback (most recent call last):
+  File "CV_Trainer.py", line 1, in <module>
+    import datasetHandler
+  File "/disk1/riddhi/Exercise-Evaluation-SV-LOO/datasetHandler.py", line 7, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "CV_Trainer.py", line 1, in <module>
+    import datasetHandler
+  File "/disk1/riddhi/Exercise-Evaluation-SV-LOO/datasetHandler.py", line 7, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "CV_Trainer.py", line 1, in <module>
+    import datasetHandler
+  File "/disk1/riddhi/Exercise-Evaluation-SV-LOO/datasetHandler.py", line 7, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "CV_Trainer.py", line 1, in <module>
+    import datasetHandler
+  File "/disk1/riddhi/Exercise-Evaluation-SV-LOO/datasetHandler.py", line 14, in <module>
+    import openpyxl
+ModuleNotFoundError: No module named 'openpyxl'
+Traceback (most recent call last):
+  File "CV_Trainer.py", line 1, in <module>
+    import datasetHandler
+  File "/disk1/riddhi/Exercise-Evaluation-SV-LOO/datasetHandler.py", line 14, in <module>
+    import openpyxl
+ModuleNotFoundError: No module named 'openpyxl'
+Traceback (most recent call last):
+  File "CV_Trainer.py", line 1, in <module>
+    import datasetHandler
+  File "/disk1/riddhi/Exercise-Evaluation-SV-LOO/datasetHandler.py", line 14, in <module>
+    import openpyxl
+ModuleNotFoundError: No module named 'openpyxl'
+Exiting...
+Exiting...
+Exiting...
+/Users/riddhichatterjee/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/loss.py:529: UserWarning: Using a target size (torch.Size([1, 736])) that is different to the input size (torch.Size([1, 618])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Traceback (most recent call last):
+  File "/Users/riddhichatterjee/SummerProject2022/Repetition-Counting/SequenceToBiSeq/Repetition-Counting-SV-LOO/CV_Trainer.py", line 240, in <module>
+    loss = criterion(y_pred, labels)
+  File "/Users/riddhichatterjee/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/Users/riddhichatterjee/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/loss.py", line 529, in forward
+    return F.mse_loss(input, target, reduction=self.reduction)
+  File "/Users/riddhichatterjee/opt/anaconda3/lib/python3.9/site-packages/torch/nn/functional.py", line 3261, in mse_loss
+    expanded_input, expanded_target = torch.broadcast_tensors(input, target)
+  File "/Users/riddhichatterjee/opt/anaconda3/lib/python3.9/site-packages/torch/functional.py", line 75, in broadcast_tensors
+    return _VF.broadcast_tensors(tensors)  # type: ignore[attr-defined]
+RuntimeError: The size of tensor a (618) must match the size of tensor b (736) at non-singleton dimension 1
+Traceback (most recent call last):
+  File "SplitTrainer.py", line 69, in <module>
+    dataset = datasetHandler.LSTMdatasetWrapper("Exercises/"+str(exercise), "train_dataset.txt")
+  File "/disk1/riddhi/DM-Testing-Layer-1/datasetHandler.py", line 246, in __init__
+    os.remove(folder+"/"+"dummyDataset_"+str(i)+".txt")
+FileNotFoundError: [Errno 2] No such file or directory: 'Exercises/0/dummyDataset_0.txt'
+Traceback (most recent call last):
+  File "SplitTrainer.py", line 69, in <module>
+    dataset = datasetHandler.LSTMdatasetWrapper("Exercises/"+str(exercise), "train_dataset.txt")
+  File "/disk1/riddhi/DM-Testing-Layer-1/datasetHandler.py", line 246, in __init__
+    os.remove(folder+"/"+"dummyDataset_"+str(i)+".txt")
+FileNotFoundError: [Errno 2] No such file or directory: 'Exercises/0/dummyDataset_0.txt'
+Testing on V2 & V9
+Dimensions: 43 -> 39 -> 35 -> 11 -> 55 -> 275 -> 266 -> 53 -> 44 -> 35 -> 17 -> 8 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 150 -> 146 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 150 -> 146 -> 1
+Traceback (most recent call last):
+  File "/Users/riddhichatterjee/SummerProject2022/Repetition-Counting/DM-Testing/Final-Experiments/GEN_DMap/LSTM-CNN-GEN-BJ/CV_Trainer.py", line 172, in <module>
+    dataset = datasetHandler.LSTMdatasetWrapper("Exercises/"+str(exercise)+"/CV", "train_"+str(testIndex)+".txt")
+  File "/Users/riddhichatterjee/SummerProject2022/Repetition-Counting/DM-Testing/Final-Experiments/GEN_DMap/LSTM-CNN-GEN-BJ/datasetHandler.py", line 245, in __init__
+    self.datasets.append(LSTMdataset(folder, "dummyDataset_"+str(i)+".txt"))
+  File "/Users/riddhichatterjee/SummerProject2022/Repetition-Counting/DM-Testing/Final-Experiments/GEN_DMap/LSTM-CNN-GEN-BJ/datasetHandler.py", line 157, in __init__
+    xy = np.loadtxt(folder+"/"+filename, delimiter=":", dtype = str)
+  File "/Users/riddhichatterjee/opt/anaconda3/lib/python3.9/site-packages/numpy/lib/npyio.py", line 1067, in loadtxt
+    fh = np.lib._datasource.open(fname, 'rt', encoding=encoding)
+  File "/Users/riddhichatterjee/opt/anaconda3/lib/python3.9/site-packages/numpy/lib/_datasource.py", line 193, in open
+    return ds.open(path, mode, encoding=encoding, newline=newline)
+  File "/Users/riddhichatterjee/opt/anaconda3/lib/python3.9/site-packages/numpy/lib/_datasource.py", line 533, in open
+    raise IOError("%s not found." % path)
+OSError: Exercises/0/CV/dummyDataset_32.txt not found.
+/Users/riddhichatterjee/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/container.py:141: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+/Users/riddhichatterjee/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/container.py:141: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Traceback (most recent call last):
+  File "/Users/riddhichatterjee/SummerProject2022/Repetition-Counting/DM-Testing/Final-Experiments/GEN_DMap/LSTM-CNN-GEN-BJ/CV_Trainer.py", line 172, in <module>
+    dataset = datasetHandler.LSTMdatasetWrapper("Exercises/"+str(exercise)+"/CV", "train_"+str(testIndex)+".txt")
+  File "/Users/riddhichatterjee/SummerProject2022/Repetition-Counting/DM-Testing/Final-Experiments/GEN_DMap/LSTM-CNN-GEN-BJ/datasetHandler.py", line 245, in __init__
+    self.datasets.append(LSTMdataset(folder, "dummyDataset_"+str(i)+".txt"))
+  File "/Users/riddhichatterjee/SummerProject2022/Repetition-Counting/DM-Testing/Final-Experiments/GEN_DMap/LSTM-CNN-GEN-BJ/datasetHandler.py", line 157, in __init__
+    xy = np.loadtxt(folder+"/"+filename, delimiter=":", dtype = str)
+  File "/Users/riddhichatterjee/opt/anaconda3/lib/python3.9/site-packages/numpy/lib/npyio.py", line 1067, in loadtxt
+    fh = np.lib._datasource.open(fname, 'rt', encoding=encoding)
+  File "/Users/riddhichatterjee/opt/anaconda3/lib/python3.9/site-packages/numpy/lib/_datasource.py", line 193, in open
+    return ds.open(path, mode, encoding=encoding, newline=newline)
+  File "/Users/riddhichatterjee/opt/anaconda3/lib/python3.9/site-packages/numpy/lib/_datasource.py", line 533, in open
+    raise IOError("%s not found." % path)
+OSError: Exercises/0/CV/dummyDataset_12.txt not found.
+/Users/riddhichatterjee/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/container.py:141: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+/Users/riddhichatterjee/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/container.py:141: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+/Users/riddhichatterjee/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/container.py:141: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 150 -> 146 -> 1
+/Users/riddhichatterjee/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/container.py:141: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+/Users/riddhichatterjee/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/container.py:141: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+/Users/riddhichatterjee/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/container.py:141: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+Dimensions: 150 -> 146 -> 1
+/Users/riddhichatterjee/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/container.py:141: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+Exiting...
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1
+/mnt/9b56ba96-214c-410a-846d-590ca821e5de/pooja/miniconda3/envs/uot_torch/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 236 -> 232 -> 1

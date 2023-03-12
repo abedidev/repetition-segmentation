@@ -1,0 +1,75 @@
+Traceback (most recent call last):
+  File "CV_Trainer.py", line 172, in <module>
+    dataset = datasetHandler.LSTMdatasetWrapper("Exercises/"+str(exercise)+"/CV", "train_"+str(testIndex)+".txt")
+  File "/home/kumar/UotProject/rachit/DM-Prototype-LSTM-CNN-GEN-SV-2-Uiprmd/datasetHandler.py", line 246, in __init__
+    self.datasets.append(LSTMdataset(folder, "dummyDataset_"+str(i)+".txt"))
+  File "/home/kumar/UotProject/rachit/DM-Prototype-LSTM-CNN-GEN-SV-2-Uiprmd/datasetHandler.py", line 158, in __init__
+    xy = np.loadtxt(folder+"/"+filename, delimiter=":", dtype = str)
+  File "/home/kumar/anaconda3/envs/uot_project/lib/python3.7/site-packages/numpy/lib/npyio.py", line 1067, in loadtxt
+    fh = np.lib._datasource.open(fname, 'rt', encoding=encoding)
+  File "/home/kumar/anaconda3/envs/uot_project/lib/python3.7/site-packages/numpy/lib/_datasource.py", line 193, in open
+    return ds.open(path, mode, encoding=encoding, newline=newline)
+  File "/home/kumar/anaconda3/envs/uot_project/lib/python3.7/site-packages/numpy/lib/_datasource.py", line 533, in open
+    raise IOError("%s not found." % path)
+OSError: Exercises/0/CV/dummyDataset_27.txt not found.
+Traceback (most recent call last):
+  File "CV_Trainer.py", line 172, in <module>
+    dataset = datasetHandler.LSTMdatasetWrapper("Exercises/"+str(exercise)+"/CV", "train_"+str(testIndex)+".txt")
+  File "/home/kumar/UotProject/rachit/DM-Prototype-LSTM-CNN-GEN-SV-2-Uiprmd/datasetHandler.py", line 246, in __init__
+    self.datasets.append(LSTMdataset(folder, "dummyDataset_"+str(i)+".txt"))
+  File "/home/kumar/UotProject/rachit/DM-Prototype-LSTM-CNN-GEN-SV-2-Uiprmd/datasetHandler.py", line 158, in __init__
+    xy = np.loadtxt(folder+"/"+filename, delimiter=":", dtype = str)
+  File "/home/kumar/anaconda3/envs/uot_project/lib/python3.7/site-packages/numpy/lib/npyio.py", line 1067, in loadtxt
+    fh = np.lib._datasource.open(fname, 'rt', encoding=encoding)
+  File "/home/kumar/anaconda3/envs/uot_project/lib/python3.7/site-packages/numpy/lib/_datasource.py", line 193, in open
+    return ds.open(path, mode, encoding=encoding, newline=newline)
+  File "/home/kumar/anaconda3/envs/uot_project/lib/python3.7/site-packages/numpy/lib/_datasource.py", line 533, in open
+    raise IOError("%s not found." % path)
+OSError: Exercises/0/CV/dummyDataset_29.txt not found.
+Traceback (most recent call last):
+  File "parallel_CV.py", line 81, in <module>
+    os.kill(fold[2], signal.SIGINT)
+ProcessLookupError: [Errno 3] No such process
+Traceback (most recent call last):
+  File "CV_Trainer.py", line 172, in <module>
+    dataset = datasetHandler.LSTMdatasetWrapper("Exercises/"+str(exercise)+"/CV", "train_"+str(testIndex)+".txt")
+  File "/home/kumar/UotProject/rachit/DM-Prototype-LSTM-CNN-GEN-SV-2-Uiprmd/datasetHandler.py", line 246, in __init__
+    self.datasets.append(LSTMdataset(folder, "dummyDataset_"+str(i)+".txt"))
+  File "/home/kumar/UotProject/rachit/DM-Prototype-LSTM-CNN-GEN-SV-2-Uiprmd/datasetHandler.py", line 158, in __init__
+    xy = np.loadtxt(folder+"/"+filename, delimiter=":", dtype = str)
+  File "/home/kumar/anaconda3/envs/uot_project/lib/python3.7/site-packages/numpy/lib/npyio.py", line 1067, in loadtxt
+    fh = np.lib._datasource.open(fname, 'rt', encoding=encoding)
+  File "/home/kumar/anaconda3/envs/uot_project/lib/python3.7/site-packages/numpy/lib/_datasource.py", line 193, in open
+    return ds.open(path, mode, encoding=encoding, newline=newline)
+  File "/home/kumar/anaconda3/envs/uot_project/lib/python3.7/site-packages/numpy/lib/_datasource.py", line 533, in open
+    raise IOError("%s not found." % path)
+OSError: Exercises/0/CV/dummyDataset_28.txt not found.
+Traceback (most recent call last):
+  File "CV_Trainer.py", line 172, in <module>
+    dataset = datasetHandler.LSTMdatasetWrapper("Exercises/"+str(exercise)+"/CV", "train_"+str(testIndex)+".txt")
+  File "/home/kumar/UotProject/rachit/DM-Prototype-LSTM-CNN-GEN-SV-2-Uiprmd/datasetHandler.py", line 246, in __init__
+    self.datasets.append(LSTMdataset(folder, "dummyDataset_"+str(i)+".txt"))
+  File "/home/kumar/UotProject/rachit/DM-Prototype-LSTM-CNN-GEN-SV-2-Uiprmd/datasetHandler.py", line 158, in __init__
+    xy = np.loadtxt(folder+"/"+filename, delimiter=":", dtype = str)
+  File "/home/kumar/anaconda3/envs/uot_project/lib/python3.7/site-packages/numpy/lib/npyio.py", line 1067, in loadtxt
+    fh = np.lib._datasource.open(fname, 'rt', encoding=encoding)
+  File "/home/kumar/anaconda3/envs/uot_project/lib/python3.7/site-packages/numpy/lib/_datasource.py", line 193, in open
+    return ds.open(path, mode, encoding=encoding, newline=newline)
+  File "/home/kumar/anaconda3/envs/uot_project/lib/python3.7/site-packages/numpy/lib/_datasource.py", line 533, in open
+    raise IOError("%s not found." % path)
+OSError: Exercises/0/CV/dummyDataset_30.txt not found.
+/home/kumar/anaconda3/envs/uot_project/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 150 -> 146 -> 1
+/home/kumar/anaconda3/envs/uot_project/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 150 -> 146 -> 1
+/home/kumar/anaconda3/envs/uot_project/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 150 -> 146 -> 1
+/home/kumar/anaconda3/envs/uot_project/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 150 -> 146 -> 1
+/home/kumar/anaconda3/envs/uot_project/lib/python3.7/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Dimensions: 150 -> 146 -> 1
