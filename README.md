@@ -16,8 +16,7 @@ methods. The proposed method enables accurate exercise analysis
 while preserving patient privacy, facilitating the effective delivery
 of virtual home-based rehabilitation programs.
 
-Preprint: [Rehabilitation Exercise Repetition Segmentation and Counting using Skeletal Body Joints]([url](https://arxiv.org/abs/2304.09735))
-https://arxiv.org/abs/2304.09735
+Preprint: https://arxiv.org/abs/2304.09735
 
 
 &nbsp;  
