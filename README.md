@@ -1,4 +1,4 @@
-# Rehabilitation Exercise Repetition Segmentation and Counting using Skeletal Body Joints
+# [Rehabilitation Exercise Repetition Segmentation and Counting using Skeletal Body Joints]([url](https://arxiv.org/abs/2304.09735))
 We present a novel approach for segmenting
 and counting the repetitions of rehabilitation exercises performed
 by patients, based on their skeletal body joints. Skeletal body
@@ -15,6 +15,9 @@ the superiority of the proposed method compared to previous
 methods. The proposed method enables accurate exercise analysis
 while preserving patient privacy, facilitating the effective delivery
 of virtual home-based rehabilitation programs.
+
+Preprint: [Rehabilitation Exercise Repetition Segmentation and Counting using Skeletal Body Joints]([url](https://arxiv.org/abs/2304.09735))
+
 
 &nbsp;  
 Note:  
